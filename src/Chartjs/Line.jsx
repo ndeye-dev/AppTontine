@@ -39,10 +39,10 @@ class Ligne extends React.Component {
             },
           };
         return(
-            <div className='container'>
-                <div className='row'>
-                <div className="card shadow ">
-                    <div className='card-header fw-semibold color '>
+            <div className='container-fluid'>
+                <div className=''>
+                <div className="card shadow cardwid ">
+                    <div className='card-header fw-semibold '>
                     Evaluation des cotisations en fonction du temps
                     </div>
                 <div className="card-body ">
@@ -50,7 +50,6 @@ class Ligne extends React.Component {
                 </div>
                 </div>
                 </div>
-
             </div>
         )
     }

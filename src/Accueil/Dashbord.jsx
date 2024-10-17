@@ -48,27 +48,29 @@ class Dashboard extends React.Component {
         return (
             <div className="">
                 <div className="row flx gx-5">
-                    <div className="col-lg-4 "><Cards title="Juin" content1="225.000 FCFA" content2="Nombre de cotisation : 27" /></div>
-                    <div className="col-lg-4 "><Cards title="Mai" content1="100.000 FCFA" content2="Nombre de cotisation : 23" /></div>
-                    <div className="col-lg-4 "><Cards title="Caisse" content1="3.500.000 FCFA / 5.000.000 FCFA"
+                    <div className="col-lg-4 long"><Cards title="Juin" content1="225.000 FCFA" content2="Nombre de cotisation : 27" /></div>
+                    <div className="col-lg-4 long"><Cards title="Mai" content1="100.000 FCFA" content2="Nombre de cotisation : 23" /></div>
+                    <div className="col-lg-4 long"><Cards title="Caisse" content1="3.500.000 FCFA / 5.000.000 FCFA"
                         content2={
                             <div className="progress" role="progressbar" style={{ height: '7px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                 <div className="progress-bar w-50" style={{ height: '7px'}}></div>
                             </div>
                         }
-                    /></div>
+                    />
+                    </div>
                 </div>
-                <div className="row m-1 mt-4 gx-3 margine">
-                    <div className="col-lg-6 large ">
+                <div className="row m-1 mt-4 gx-2 margine">
+                    <div className="col-lg-6 ">
                         <Ligne />
                     </div>
-                    <div className="col-lg-6 large">
+                    <div className="col-lg-6 ">
                         <Rond />
                     </div>
                 </div>
-                <div className="row mt-5 gx-5 m-2">
-                    <div className="col-lg-6 bg-white shadow">
+                <div className="row mt-5  m-1">
+                    <div className="col-lg-6">
                         <h4>Juin</h4>
+                        <div className=" bg-white shadow">
                         <table className="table">
                             <thead class="card-header">
                                 <tr class="">
@@ -90,8 +92,10 @@ class Dashboard extends React.Component {
                             </tbody>
                         </table>
                     </div>
-                    <div className="col-lg-6 bg-white shadow">
+                    </div>
+                    <div className="col-lg-6">
                         <h4>Top progression</h4>
+                        <div className=" bg-white shadow">
                         <table className="table">
                             <thead className="card-header">
                                 <tr>
@@ -111,6 +115,7 @@ class Dashboard extends React.Component {
                                 ))}
                             </tbody>
                         </table>
+                    </div>
                     </div>
                 </div>
             </div>

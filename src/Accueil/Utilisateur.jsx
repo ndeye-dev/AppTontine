@@ -56,7 +56,7 @@ class Tableau extends React.Component {
     render(){
         return(
             <div className="m-5">
-            <div className="row mt-4 gx-5">
+            <div className=" mt-4 gx-5">
               <div className="col-lg-8 bg-white shadow col-md-6">
                 <table className="table">
                   <thead className="card-header">

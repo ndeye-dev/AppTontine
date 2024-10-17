@@ -14,7 +14,7 @@ class Rond extends React.Component {
                     label: 'Statistique',
                     data: [49, 9, 24, 18],
                     backgroundColor: ['#083b4e', '#ffc0f7', 'Pink', '#10ef66'],
-                    borderWidth: 2
+                
                 },
             ],
             labels: ['Termine', 'En cours', 'Archive', 'Bloque'],
@@ -30,8 +30,8 @@ class Rond extends React.Component {
         };
         return (
             <div className='container'>
-                <div className='row'>
-                    <div className="card shadow">
+                <div className=''>
+                    <div className="card shadow cardwid">
                         <div className='card-header fw-semibold color '>
                             Statistique
                         </div>

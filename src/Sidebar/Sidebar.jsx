@@ -3,6 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class Sidebar extends React.Component {
+     closeSidebar = () => {
+        const sidebar = document.getElementById("sidebarContent");
+        if (sidebar) {
+            sidebar.classList.remove("show"); // Enlève la classe 'show' pour cacher la sidebar
+        }
+    };
     render() {
         return (
             <div className="">
@@ -17,13 +23,17 @@ class Sidebar extends React.Component {
                     <i className="bi bi-list"></i> 
                 </button>
                 <div className="sidebar bag collapse d-md-block position-fixed" id="sidebarContent">
-                    <h4 className="fw-bold mb-5">
+                    <h4 className="fw-bold mb-5 ">
                         <i className="bi bi-bag-check"></i> Bakeli Tontine
+                        <button onClick={this.closeSidebar} className="btn close-btn text-white">
+                            <i className="bi bi-x fs-2 d-block d-md-none"></i>
+                        </button>
                     </h4>
                     <ul className="navbar-nav fs-5 fw-bold">
                         <Link to="/Accueil" className="text-white text-decoration-none">
                         <li className="nav-item couleur mb-2 p-2">
                             <i class="bi bi-grid"></i> Dashboard
+                            
                         </li>
                         </Link>
                         <Link to="/Utilisateur" className="text-white text-decoration-none">

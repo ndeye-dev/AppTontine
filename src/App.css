@@ -86,6 +86,13 @@ label{
   .inpt{
     width: 100% !important;
   }
+  .sidebar {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000;
+}
 }
 .form{
   margin-left: 2rem;
@@ -161,7 +168,7 @@ label{
 } */
 .navb{
   width: 82%;
-  z-index: 1000;
+  z-index: 500;
 }
 .progress-bar{
   background-color: #20DF7F;
@@ -187,3 +194,12 @@ label{
 .large {
   height: 300px; 
 }
+.cardwid{
+  height: 290px;
+}
+.long{
+  height: 120px;
+}
+/* .close.btn{
+  display: none;
+} */
