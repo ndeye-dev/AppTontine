@@ -2,41 +2,25 @@ import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Navebar from "../Navbar/Navbar";
 
-const cardCSS = {
-    borderRadius: '8px',
-    padding: '10px',
-    margin: '16px',
-  };
-//   const { title = 'Utilisa teur' } = this.props;
  class Cardsutilisateur extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          cards: props.cards || [
-            {content1: "Membres Actif", content2: "94 Membres" },
-            {content1: "Membres Bloques",  content2: "6 Membres" },
-            {content1: "Total Effectif",  content2: " 100 Membres" },
-          ]
-        };
-      }
-      render() {
+    render() {
+        const { content1, content2 } = this.props;
+     
         return (
-          <div className="flx" style={{ display: 'flex', justifyContent: 'center'}}>
-            {this.state.cards.map((card, index) => (
-              <div key={index} className="shadow w-75" style={cardCSS}>
-                <p>{card.content1}</p>
-                <h6>{card.content2}</h6>
-              </div>
-            ))}
+          <div className="row ">
+            <div className="shadow p-3 ">
+              <h6>{content1}</h6>
+              <h5>{content2}</h5>
+            </div>
           </div>
         );
       }
-}
+    }   
 
 class Ajouter extends React.Component {
 render(){
     return(
-        <div>
+        <div className="text-end mt-4">
             <button className="btn btn-secondary">Ajouter</button>
         </div>
     )
@@ -47,12 +31,24 @@ class Tableau extends React.Component {
         super(props);
             this.state = {
                 tableau: [
-                    { id: 1, titre: "Selena Boy",ligne2: '300.000 FCFA', ligne1: "01-06-2022",  ligne3: '100%', ligne4: 'Terminé',ligne5: [ <i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> , <i className="bi bi-slash-circle"></i>]},
-                    { id: 3, titre: "Jhon Robert",ligne2: '300.000 FCFA', ligne1: "01-06-2022",  ligne3: '100%', ligne4: 'En cours',ligne5: [ <i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>] },
-                    { id: 6, titre: "Emma Stone", ligne2: '300.000 FCFA', ligne1: "01-06-2022",   ligne3: '100%', ligne4: 'Terminé', ligne5: [ <i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]},
-                    { id: 2, titre: "Emma Watson", ligne2: '300.000 FCFA', ligne1: "01-06-2022",  ligne3: '100%', ligne4: 'En cours', ligne5: [<i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]},
-                    { id: 4, titre: "Anne Hathaway", ligne2: '300.000 FCFA', ligne1: "01-06-2022", ligne3: '100%', ligne4: 'En cours', ligne5: [<i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]},
-                    { id: 5, titre: "Ravi Shankar", ligne2: '300.000 FCFA', ligne1: "01-06-2022", ligne3: '100%', ligne4: 'En cours', ligne5: [<i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]}
+                    { id: 1, titre: "Selena Boy",ligne2: '300.000 FCFA', ligne1: "01-06-2022",  ligne3: [<div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div className="progress-bar w-100" style={{ height: '5px', }}></div>
+                    </div>], ligne4: 'Terminé',ligne5: [ <i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> , <i className="bi bi-slash-circle"></i>]},
+                    { id: 3, titre: "Jhon Robert",ligne2: '300.000 FCFA', ligne1: "01-06-2022",  ligne3: [<div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div className="progress-bar w-100" style={{ height: '5px', }}></div>
+                    </div>], ligne4: 'En cours',ligne5: [ <i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>] },
+                    { id: 6, titre: "Emma Stone", ligne2: '300.000 FCFA', ligne1: "01-06-2022",   ligne3: [<div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div className="progress-bar w-50" style={{ height: '5px', backgroundColor: '#083b4e'}}></div>
+                    </div>], ligne4: 'Terminé', ligne5: [ <i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]},
+                    { id: 2, titre: "Emma Watson", ligne2: '300.000 FCFA', ligne1: "01-06-2022",  ligne3: [<div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div className="progress-bar w-50" style={{ height: '5px', backgroundColor: '#083b4e'}}></div>
+                    </div>], ligne4: 'En cours', ligne5: [<i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]},
+                    { id: 4, titre: "Anne Hathaway", ligne2: '300.000 FCFA', ligne1: "01-06-2022", ligne3: [<div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div className="progress-bar w-50" style={{ height: '5px', backgroundColor: '#083b4e'}}></div>
+                    </div>], ligne4: 'En cours', ligne5: [<i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]},
+                    { id: 5, titre: "Ravi Shankar", ligne2: '300.000 FCFA', ligne1: "01-06-2022", ligne3: [<div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div className="progress-bar w-50" style={{ height: '5px', backgroundColor: '#083b4e'}}></div>
+                    </div>], ligne4: 'En cours', ligne5: [<i className="bi bi-eye"></i> , <i className="bi bi-file-check"></i> ,<i className="bi bi-slash-circle"></i>]}
             
                   ]
             }
@@ -63,14 +59,14 @@ class Tableau extends React.Component {
             <div className="row mt-4 gx-5">
               <div className="col-lg-8 bg-white shadow col-md-6">
                 <table className="table">
-                  <thead style={{ backgroundColor: 'red', color: 'white' }}>
+                  <thead className="card-header">
                     <tr>
-                      <th style={{ backgroundColor: '#10ef66' }}>Membres</th>
-                      <th style={{ backgroundColor: '#10ef66' }}>Debut debut</th>
-                      <th style={{ backgroundColor: '#10ef66' }}>Seuil</th>
-                      <th style={{ backgroundColor: '#10ef66' }}>Progression</th>
-                      <th style={{ backgroundColor: '#10ef66' }}>Statut</th>
-                      <th style={{ backgroundColor: '#10ef66' }}>Actions</th>
+                      <th>Membres</th>
+                      <th>Debut debut</th>
+                      <th>Seuil</th>
+                      <th>Progression</th>
+                      <th>Statut</th>
+                      <th>Actions</th>
 
                     </tr>
                   </thead>
@@ -107,8 +103,14 @@ class Utilisateur extends React.Component {
               <Navebar nom="Utilsateur"/>
             </div>
           <div className="contenu">
-              <div>
-                 <Cardsutilisateur />
+              <div className="row flx gx-5">
+              <div className="col-lg-4"><Cardsutilisateur content1= "Membres Actif" content2= "94 Membres"/></div>
+                 <div className="col-lg-4">
+                    <Cardsutilisateur content1= "Membres Bloques"  content2= "6 Membres" />
+                 </div>
+                 <div className="col-lg-4">
+                    <Cardsutilisateur content1= "Total Effectif"  content2= " 100 Membres" />
+                 </div>
               </div>
               <div>
                 <Ajouter />
@@ -118,9 +120,7 @@ class Utilisateur extends React.Component {
               </div>
             </div>
           </div>
-
         </div>
-        
       </div>
       </div>
     )

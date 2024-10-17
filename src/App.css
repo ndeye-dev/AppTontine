@@ -21,7 +21,7 @@ ul{
   height: 80px;
   border-radius: 100%;
   background-color: gainsboro;
-  border: 1px solid #10ef66;
+  border: 1px solid #20DF7F;
 }
 .buttonp{
   background-color: #083b4e;
@@ -55,6 +55,10 @@ label{
   .texte{
     text-align: start;
   }
+  .navb{
+    width: 500%;
+    z-index: 1000;
+  }
 }
 .bag{
   background-color: #083b4e;
@@ -63,15 +67,15 @@ label{
   height: 200vh;
 }
 .couleur{
-  background-color: #10ef66;
+  background-color: #20DF7F;
   cursor: pointer;
 }
 .hover:hover{
-  background-color: #10ef66;
+  background-color: #20DF7F;
   cursor: pointer;
 }
 .valid{
-  color: #10ef66;
+  color: #20DF7F;
 }
 
 .sidbar {
@@ -105,19 +109,21 @@ label{
       z-index: 1000;
   }
   .flx{
-    display: flex;
-    flex-direction: column;
     margin-top: 5rem;
+    width: 100%;
+    gap: 3rem;
+  }
+  .margine{
+    margin: 0;
   }
  
 }
 .flx{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4rem;
+  margin: 2px;
+  margin-top: 5rem;
 }
 .card-header{
-  background-color: #10ef66;
+  background-color: #20DF7F;
 }
 /* .posi{
  z-index: 1000;
@@ -125,4 +131,28 @@ label{
 .navb{
   width: 82%;
   z-index: 1000;
+}
+.progress-bar{
+  background-color: #20DF7F;
+ 
+}
+.left{
+  float: left !important;
+  margin-top: 1rem !important;
+}
+.table{
+--bs-table-bg: none;
+
+
+}
+.table>:not(caption)>*>*{
+  color: rgb(58, 58, 58);
+  padding: 8px;
+}
+.vert{
+  color: #20DF7F;
+  font-weight: bold;
+}
+.large {
+  height: 300px; 
 }
