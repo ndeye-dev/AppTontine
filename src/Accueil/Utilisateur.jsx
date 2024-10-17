@@ -8,7 +8,7 @@ import Navebar from "../Navbar/Navbar";
      
         return (
           <div className="row ">
-            <div className="shadow p-3 ">
+            <div className=" p-3 ">
               <h6>{content1}</h6>
               <h5>{content2}</h5>
             </div>
@@ -102,12 +102,12 @@ class Utilisateur extends React.Component {
               <Navebar nom="Utilsateur"/>
             </div>
           <div className="contenu">
-              <div className="row flx gx-5">
-              <div className="col-lg-4"><Cardsutilisateur content1= "Membres Actif" content2= "94 Membres"/></div>
-                 <div className="col-lg-4">
-                    <Cardsutilisateur content1= "Membres Bloques"  content2= "6 Membres" />
+              <div className="row flx gx-5 ">
+              <div className="col-lg-4 shadow vrt rounded-3 text-white"><Cardsutilisateur content1= {[<div className="">Membres actifs <i class="bi bi-circle bg-white rounded-4"></i></div>]} content2= "94 Membres"/></div>
+                 <div className="col-lg-4 shadow  rounded-3 ">
+                    <Cardsutilisateur content1= "Membres Bloques "  content2= "6 Membres" />
                  </div>
-                 <div className="col-lg-4">
+                 <div className="col-lg-4 shadow  rounded-3 ">
                     <Cardsutilisateur content1= "Total Effectif"  content2= " 100 Membres" />
                  </div>
               </div>

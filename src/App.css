@@ -22,6 +22,9 @@ ul{
   background-color: gainsboro;
   border: 1px solid #20DF7F;
 }
+.vrt{
+  background-color: #20DF7F;
+}
 .buttonp{
   background-color: #083b4e;
 }
@@ -50,6 +53,10 @@ label{
 @media screen and (max-width: 440px) {
   .fond {
     margin: 0;
+    width: 100% !important;
+  }
+  .connec{
+    margin-left: 5rem !important;
   }
   .texte{
     text-align: start;
@@ -57,6 +64,9 @@ label{
   .navb{
     width: 500%;
     z-index: 1000;
+  }
+  .margine{
+    gap: 2rem;
   }
   .imgg{
     background-color: #083b4e;
@@ -68,9 +78,10 @@ label{
   .img{
     background-color: #083b4e;
     padding: 5rem;
+    padding-top: 28px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    height: 80vh;
+    height: 60vh;
   }
   .textee{
     font-size: 20px;
@@ -92,6 +103,9 @@ label{
     left: 0;
     height: 100%;
     z-index: 1000;
+}
+.navb{
+  width: 90% !important;
 }
 }
 .form{
@@ -200,6 +214,4 @@ label{
 .long{
   height: 120px;
 }
-/* .close.btn{
-  display: none;
-} */
+

@@ -112,7 +112,7 @@ class Inscription extends React.Component {
                             <input data-mdb-ripple-init class="btn btn-success btn-lg" type="submit" value="S'incrire" />
                         </Link>
                     </div>
-                    <p className="text-center">Vous avez deja un copmte,  <Link to="/Connexion">connectez-vous</Link></p>
+                    <p className="text-center">Vous avez deja un copmte,  <Link to="/Connexion" className="text-decoration-none text-secondary">connectez-vous</Link></p>
                 </form>
                 </div>
                 </div>

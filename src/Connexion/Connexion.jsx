@@ -90,8 +90,8 @@ class Formulaire extends React.Component {
             />
           </div>
           <p className="texte">Mot de passe oublié ?</p>
-          <Link to="/Accueil"><button type="submit" className="btn btn-success w-50">Connexion</button></Link>
-          <p className="texte pt-3">Vous n'avez pas de compte ? <Link to="/Inscription">Inscrivez-vous</Link></p>
+          <Link to="/Accueil"><button type="submit" className="btn btn-success w-50 connec">Connexion</button></Link>
+          <p className="texte pt-3">Vous n'avez pas de compte ? <Link to="/Inscription" className="text-decoration-none text-secondary">Inscrivez-vous</Link></p>
         </form>
       </div>   
     )
