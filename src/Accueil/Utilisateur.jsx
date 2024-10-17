@@ -67,7 +67,6 @@ class Tableau extends React.Component {
                       <th>Progression</th>
                       <th>Statut</th>
                       <th>Actions</th>
-
                     </tr>
                   </thead>
                   <tbody>

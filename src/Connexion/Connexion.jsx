@@ -24,7 +24,7 @@ class Titre extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="texte fw-bold text-center pb-5">{this.props.text}</h1>
+        <h1 className="texte textee fw-bold text-center pb-5">{this.props.text}</h1>
       </div>
     )
   }
@@ -58,7 +58,6 @@ class Formulaire extends React.Component {
       return;
     }
     this.setState({ errorMessage: '' });
-    // Rediriger vers la page d'accueil (ou autre action)
     this.props.history.push('/accueil');  };
 
   render() {

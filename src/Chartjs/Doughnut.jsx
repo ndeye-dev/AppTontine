@@ -28,7 +28,6 @@ class Rond extends React.Component {
                 }
             },
         };
-
         return (
             <div className='container'>
                 <div className='row'>
