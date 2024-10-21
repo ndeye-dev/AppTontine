@@ -18,8 +18,9 @@ class Dashboard extends React.Component {
             ],
             tab2: [
                 { id: 1, titre: "Selena Boy", ligne1: "01-06-2022", ligne2: [
-                            <div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div><div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                 <div className="progress-bar w-100" style={{ height: '5px', }}></div>
+                            </div>
                             </div>] },
                 { id: 2, titre: "Jhon Robert", ligne1: "01-06-2022", ligne2: [
                             <div className="progress" role="progressbar" style={{ height: '5px'}} aria-label="" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">

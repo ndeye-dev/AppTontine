@@ -107,6 +107,12 @@ label{
 .navb{
   width: 90% !important;
 }
+.ajouter{
+  margin-left: 0 !important;
+}
+.w-25{
+  width: 100% !important;
+}
 }
 .form{
   margin-left: 2rem;
@@ -173,6 +179,10 @@ label{
 .flx{
   margin: 2px;
   margin-top: 5rem;
+  /* gap: 2rem; */
+}
+.gap{
+  gap: 2rem;
 }
 .card-header{
   background-color: #20DF7F;
@@ -199,9 +209,9 @@ label{
 }
 .table>:not(caption)>*>*{
   color: rgb(58, 58, 58);
-  padding: 8px;
+  padding: 8px;                         
 }
-.vert{
+.vert{  
   color: #20DF7F;
   font-weight: bold;
 }
@@ -214,4 +224,13 @@ label{
 .long{
   height: 120px;
 }
-
+li:active{
+  background-color: #20DF7F;
+  
+}
+.danger{
+  color: red;
+}
+.ajouter{
+  margin-left: 50rem;
+}

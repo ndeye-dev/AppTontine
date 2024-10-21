@@ -6,7 +6,7 @@ class Sidebar extends React.Component {
      closeSidebar = () => {
         const sidebar = document.getElementById("sidebarContent");
         if (sidebar) {
-            sidebar.classList.remove("show"); // Enlève la classe 'show' pour cacher la sidebar
+            sidebar.classList.remove("show");
         }
     };
     render() {
@@ -31,30 +31,30 @@ class Sidebar extends React.Component {
                     </h4>
                     <ul className="navbar-nav fs-5 fw-bold">
                         <Link to="/Accueil" className="text-white text-decoration-none">
-                        <li className="nav-item couleur mb-2 p-2">
+                        <li className="nav-item active mb-2 p-2 ">
                             <i class="bi bi-grid"></i> Dashboard
                             
                         </li>
                         </Link>
                         <Link to="/Utilisateur" className="text-white text-decoration-none">
-                        <li className="nav-item mb-2 hover p-2">
+                        <li className="nav-item mb-2 p-2 active">
                             <i className="bi bi-person"></i> Utilisateurs
                         </li>
                         </Link>
                         <Link to="/Cotisation" className="text-white text-decoration-none">
-                        <li className="nav-item mb-2 p-2 hover">
+                        <li className="nav-item mb-2 p-2 active">
                             <i className="bi bi-currency-exchange"></i> Cotisations
                         </li>
                         </Link>
                         <div className="btn-group">
-                            <p className="p-2 hover"><i className="bi bi-gear"></i> Paramètres
+                            <p className="p-2 active"><i className="bi bi-gear"></i> Paramètres
                             <button
                                 type="button"
                                 className="btn dropdown-toggle text-white"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             ></button>
-                            <ul className="dropdown-menu dropdown-menu-end left">        
+                            <ul className="dropdown-menu dropdown-menu-end left">      
                                 <Link to="/Parametre"><li><button className="dropdown-item" type="button">Parametres Generaux</button></li></Link> 
                                 <Link><li><button className="dropdown-item" type="button">Utisateurs</button></li></Link>
                                 <li><button className="dropdown-item" type="button">Archives</button></li>
